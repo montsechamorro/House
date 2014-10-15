@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle suelo1;
     private Circle sun;
+    private Person man;
     
     /**
      * Constructor for objects of class Picture
@@ -63,6 +64,12 @@ public class Picture
         suelo1.changeSize(2000);
         suelo1.makeVisible();
         
+        man = new Person();
+        man.slowMoveHorizontal(-180);
+        man.makeVisible();
+        
+        
+        
         suelo1.makeVisible();
         
     }
@@ -93,6 +100,7 @@ public class Picture
             sun.changeColor("black");
         }
     }
+    
 
     /**
      * Change this picture to use color display
@@ -107,4 +115,13 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * New person
+     */
+    public void manWalk()
+    {
+         man.makeVisible();
+         man.slowMoveHorizontal(60);
+    }
 }
+    
