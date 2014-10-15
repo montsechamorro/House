@@ -64,13 +64,15 @@ public class Picture
         suelo1.changeSize(2000);
         suelo1.makeVisible();
         
+        suelo1.makeVisible();
+        
         man = new Person();
-        man.slowMoveHorizontal(-180);
+        man.moveHorizontal(-180);
         man.makeVisible();
         
         
         
-        suelo1.makeVisible();
+      
         
     }
     
